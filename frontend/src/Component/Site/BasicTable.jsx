@@ -1,5 +1,5 @@
-import React from "react";
-import data from "../../Assets/data/site_knowledge.json";
+import axios from "axios";
+import React, { useEffect } from "react";
 
 const truncate = (str, maxLength) => {
   if (str.length <= maxLength) return str;
@@ -7,6 +7,18 @@ const truncate = (str, maxLength) => {
 };
 
 export default function BasicTable() {
+  const [data, setData] = React.useState({});
+  useEffect(() => {
+    axios
+      .get("http://127.0.0.1:5000/trained_sites")
+      .then((res) => {
+        setData(res.data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div className=" py-[100px] overflow-x-auto bg-gradient-to-b  from-[#aea0ff] via-[#C7BFF0] via-500%  to-[#B0A5F1]">
       <h1 className=" text-3xl text-center font-semibold text-[60px] mb-[80px] text-[#4C3EA0]">
