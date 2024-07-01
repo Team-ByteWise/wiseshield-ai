@@ -15,13 +15,13 @@ WiseShield AI is a comprehensive security solution designed to safeguard users f
 1. Clone the repository using the following command:
 
     ```bash
-    git clone https://github.com/Team-ByteWise/hack4bengal.git
+    git clone https://github.com/Team-ByteWise/wiseshield-ai.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd hack4bengal
+    cd wiseshield-ai
     ```
 3. Run the following command to run automated install:
 
