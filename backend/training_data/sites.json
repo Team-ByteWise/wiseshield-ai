@@ -1,0 +1,236 @@
+{
+  "Facebook": [
+    "https://facebook.com/",
+    "https://www.facebook.com/login.php",
+    "https://en-gb.facebook.com/login.php",
+    "https://bn-in.facebook.com/login.php",
+    "https://hi-in.facebook.com/login.php"
+  ],
+  "Google": [
+    "https://accounts.google.com",
+    "https://google.com/",
+    "https://google.co.in",
+    "https://google.co.nz",
+    "https://google.co.jp",
+    "https://google.co.uk",
+    "https://google.co.kr",
+    "https://google.co.th",
+    "https://google.co.id",
+    "https://google.co.il"
+  ],
+  "Amazon": [
+    "https://amazon.in",
+    "https://amazon.co.uk",
+    "https://amazon.com/",
+    "https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+  ],
+  "Microsoft": [
+    "https://login.live.com",
+    "https://microsoft.com/",
+    "https://login.microsoftonline.com/"
+  ],
+  "LinkedIn": [
+    "https://linkedin.com/",
+    "https://www.linkedin.com/login"
+  ],
+  "X (Twitter)": [
+    "https://x.com/",
+    "https://x.com/login"
+  ],
+  "PayPal": [
+    "https://paypal.com/",
+    "https://www.paypal.com/signin"
+  ],
+  "Apple": [
+    "https://apple.com/",
+    "https://appleid.apple.com/sign-in"
+  ],
+  "Netflix": [
+    "https://netflix.com/",
+    "https://www.netflix.com/login"
+  ],
+  "Instagram": [
+    "https://instagram.com/",
+    "https://www.instagram.com/accounts/login/"
+  ],
+  "Dropbox": [
+    "https://dropbox.com/",
+    "https://www.dropbox.com/login"
+  ],
+  "Adobe": [
+    "https://adobe.com/",
+    "https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fhomepage_milo%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252Fhome%253FacomLocale%253Din%2523old_hash%253D%2526from_ims%253Dtrue%2526client_id%253Dhomepage_milo%2526api%253Dauthorize%2526scope%253DAdobeID%252Copenid%252Cgnav%252Cpps.read%252Cfirefly_api%252Cadditional_info.roles%252Cread_organizations%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.41.0-12-g3caf235%2522%252C%2522nonce%2522%253A%25223723726289266370%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=homepage_milo&scope=AdobeID%2Copenid%2Cgnav%2Cpps.read%2Cfirefly_api%2Cadditional_info.roles%2Cread_organizations&state=%7B%22jslibver%22%3A%22v2-v0.41.0-12-g3caf235%22%2C%22nonce%22%3A%223723726289266370%22%7D&relay=d454f463-c8c8-4ba2-92ff-b3f1b8d4cb5d&locale=en_GB&flow_type=token&idp_flow_type=login&s_p=google%2Cfacebook%2Capple%2Cmicrosoft%2Cline&response_type=token&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fwww.adobe.com%2Fhome%3FacomLocale%3Din%23old_hash%3D%26from_ims%3Dtrue%26client_id%3Dhomepage_milo%26api%3Dauthorize%26scope%3DAdobeID%2Copenid%2Cgnav%2Cpps.read%2Cfirefly_api%2Cadditional_info.roles%2Cread_organizations&use_ms_for_expiry=true#/"
+  ],
+  "Spotify": [
+    "https://spotify.com/",
+    "https://accounts.spotify.com/en-GB/login?continue=https%3A%2F%2Fopen.spotify.com%2F"
+  ],
+  "Slack": [
+    "https://slack.com/intl/en-in/",
+    "https://slack.com/signin#/signin"
+  ],
+  "Reddit": [
+    "https://reddit.com/",
+    "https://www.reddit.com/login/"
+  ],
+  "Salesforce": [
+    "https://salesforce.com/",
+    "https://login.salesforce.com/?locale=in"
+  ],
+  "Apple iCloud": [
+    "https://icloud.com/"
+  ],
+  "eBay": [
+    "https://ebay.com/",
+    "https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&sgfl=gh&ru=https%3A%2F%2Fwww.ebay.com%2F"
+  ],
+  "Pinterest": [
+    "https://pinterest.com/",
+    "https://www.pinterest.com/login/"
+  ],
+  "Zendesk": [
+    "https://zendesk.com/",
+    "https://www.zendesk.com/in/login/"
+  ],
+  "Okta": [
+    "https://okta.com/",
+    "https://login.okta.com/"
+  ],
+  "GitHub": [
+    "https://github.com/",
+    "https://github.com/login"
+  ],
+  "GitLab": [
+    "https://gitlab.com/",
+    "https://about.gitlab.com/",
+    "https://gitlab.com/users/sign_in"
+  ],
+  "Bitbucket": [
+    "https://bitbucket.org/",
+    "https://id.atlassian.com/login?application=bitbucket&continue=https%3A%2F%2Fbitbucket.org%2Faccount%2Fsignin%2F%3Fnext%3D%252F%26redirectCount%3D1"
+  ],
+  "Atlassian": [
+    "https://atlassian.com/",
+    "https://id.atlassian.com/login"
+  ],
+  "Snapchat": [
+    "https://accounts.snapchat.com",
+    "https://snapchat.com/"
+  ],
+  "Tumblr": [
+    "https://tumblr.com/",
+    "https://www.tumblr.com/login"
+  ],
+  "Foursquare": [
+    "https://foursquare.com/",
+    "https://foursquare.com/login"
+  ],
+  "Airbnb": [
+    "https://airbnb.com/",
+    "https://www.airbnb.co.in/login?locale=en&_set_bev_on_new_domain=1719405816_EANzdhMDE3OTljZj"
+  ],
+  "Udemy": [
+    "https://udemy.com/",
+    "https://www.udemy.com/join/login-popup/"
+  ],
+  "Quora": [
+    "https://quora.com/",
+    "https://www.quora.com/login"
+  ],
+  "New York Times": [
+    "https://nytimes.com/",
+    "https://myaccount.nytimes.com/auth/enter-email?response_type=cookie&client_id=lgcl&redirect_uri=https%3A%2F%2Fwww.nytimes.com"
+  ],
+  "BBC": [
+    "https://bbc.com/",
+    "https://account.bbc.com/auth?realm=%2F&clientId=Account&ptrt=https%3A%2F%2Fwww.bbc.com%2F&userOrigin=BBCS_BBC&isCasso=false&action=sign-in&redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&service=IdSignInService&nonce=cDKCeJfN-8JbA0dl0HrLb4KvCumwKUE-RvTE"
+  ],
+  "Nike": [
+    "https://nike.com/",
+    "https://accounts.nike.com/lookup?client_id=4fd2d5e7db76e0f85a6bb56721bd51df&redirect_uri=https://www.nike.com/auth/login&response_type=code&scope=openid%20nike.digital%20profile%20email%20phone%20flow%20country&state=dfcb89a7b2b34a02818090fcb90d5219&code_challenge=r9TsuStB3Je_xXWsn94Qs_B6BGm0Kj4eg84ZahP_PJw&code_challenge_method=S256"
+  ],
+  "Steam": [
+    "https://store.steampowered.com/",
+    "https://www.steampowered.com/",
+    "https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header"
+  ],
+  "Epic Games": [
+    "https://store.epicgames.com/en-US/",
+    "https://www.epicgames.com/id/login"
+  ],
+  "Walmart": [
+    "https://walmart.com/",
+    "https://identity.walmart.com/account/login?client_id=5f3fb121-076a-45f6-9587-249f0bc160ff&code_challenge=g8Bwl9CKtPRUfogwlP1nC9yGxurm4gORgMTRczq5Khw&redirect_uri=https%3A%2F%2Fwww.walmart.com%2FverifyToken&scope=openid+email+offline_access&tenant_id=elh9ie&state=%2F"
+  ],
+  "Target": [
+    "https://www.target.com/",
+    "https://www.target.com/account?prehydrateClick=true"
+  ],
+  "State Bank of India": [
+    "https://www.onlinesbi.com/",
+    "https://retail.onlinesbi.sbi/retail/login.htm"
+  ],
+  "ICICI Bank": [
+    "https://www.icicibank.com/",
+    "https://infinity.icicibank.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=ICI&ITM=nli_personalb_personal_login_btn&_gl=1*30xkeg*_ga*MTgzMDcxOTY5Ni4xNjIwMDM5NDU0*_ga_SKB78GHTFV*MTYyODIzNDM4NC43Ny4xLjE2MjgyMzQ1MDQuMjc.&_ga=2.45734564.1415787442.1719384401-1639311514.1719384401"
+  ],
+  "HDFC Bank": [
+    "https://www.hdfcbank.com/",
+    "https://netbanking.hdfcbank.com/netbanking/",
+    "https://netportal.hdfcbank.com/login#/openMarketLoginCC",
+    "https://netportal.hdfcbank.com/login#/openMarketLoginLN",
+    "https://portal.hdfc.com/login",
+    "https://online.hdfc.com/HdfcDeposits/",
+    "https://fastag.hdfcbank.com/CustomerPortal/Login",
+    "https://customerportal.hdfcbankonepune.in/customer/",
+    "https://hdfcbankprepaid.hdfcbank.com/hdfcportal/hdfcbank/html",
+    "https://mybusiness.digital.hdfcbank.com/login",
+    "https://applyonline.hdfcbank.com/xpressway.html?icid=website_organic_loxw",
+    "https://hdfcbankprepaid.hdfcbank.com/hdfcportal/index",
+    "https://hdfcbankprepaid.hdfcbank.com/hdfcportal/hdfcbank/html"
+  ],
+  "Axis Bank": [
+    "https://www.axisbank.com/",
+    "https://omni.axisbank.co.in/axisretailbanking/",
+    "https://neo.axisbank.com/login/customer",
+    "https://gtb1.axisbank.com/pre-login-interim",
+    "https://idp.axisbank.co.in/mib/Welcome"
+  ],
+  "Bank of Baroda": [
+    "https://www.bankofbaroda.in/",
+    "https://feba.bobibanking.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=012",
+    "https://intl.bobibanking.com/",
+    "https://fastag.bankofbaroda.com/Default.aspx",
+    "https://eservices.nsdl.com/",
+    "https://bobprepaid.yappay.in/login",
+    "https://www.barodaetrade.com/",
+    "https://intranet.bankofbaroda.co.in/oam/server/obrareq.cgi?encquery%3DbViYmA9SG5FpuUeIy2zsRCGdfHkYyFj3VkpDMSwVNRrV%2F2IoWVyD5be1zCJ6%2F0yA3EfUVXxT7wTtdgcMe%2Bg3eAVJLXD%2B7K5DAsrZcTkpBjOjfep48mBnlFepSNhtqFa0kq%2BuZjbALGVnYMNhGQx8o07%2B4PPUqamDDokIVFQUY1TWeJ8ZGNsLpr33DmBARa1nXnSqHodtcIxgvco17LlifFNDPsQxoEf1kJSmLRByA3xRuhEJ8ZNsC0dV5tA8Og0ZZyBxMEzCY8A9SjZaEiDoyCf6YKVDnoiILC2AGW522gDj52WRlHHd%2B6Gl8emEV9sH%20agentid%3DOAM_Webgate%20ver%3D1%20crmethod%3D2%26cksum%3D651c32fe5480aa9c5569ec2967e81f19545c2e91&ECID-Context=1.00jU_jnfCNaFw00Fzzw0w00001Xo008ZNa%3BkXjE",
+    "https://me.medibuddy.in/",
+    "https://barodagurukul.co.in/",
+    "https://barodagurukul.co.in/login"
+  ],
+  "UCO Bank": [
+    "https://ucobank.com/en/",
+    "https://www.ucoebanking.in/",
+    "https://www.ucoebanking.in/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=028&LANG_ID=001&UserType=R"
+  ],
+  "Punjab National Bank": [
+    "https://www.pnbindia.in/",
+    "https://netbanking.netpnb.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=024",
+    "https://internetbanking.pnbibanking.in/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=024"
+  ],
+  "IDBI Bank": [
+    "https://www.idbibank.in/",
+    "https://inet.idbibank.co.in/ret/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=IBKL",
+    "https://corp.idbibank.co.in/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=IBKL",
+    "https://samriddhigsec.idbibank.co.in/GSEC/newInvPageCaller.do?pageId=newInvHome#no-back-button",
+    "https://idbicreditcards.co.in/",
+    "https://clms.idbibank.co.in/GLMS/"
+  ],
+  "Canara Bank": [
+    "https://canarabank.com/",
+    "https://canarabank.com/pages/online-account-opening",
+    "https://videokyc.canarabank.com/user/home?client_id=canarabank&api_key=canarabank&process=U",
+    "https://online.canarabank.in/?module=login"
+  ]
+}

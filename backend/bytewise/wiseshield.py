@@ -39,10 +39,11 @@ def get_url(url: str) -> str | None:
         return None
 
 
-def extract_features(url: str, content: str) -> dict[str, str]:
+def extract_features(url: str, content: str, brand: str) -> dict[str, str]:
     features = {
         "url": url,
         "domain": get_main_domain(url),
+        "brand": brand,
         "content": content
     }
     logi(f"Features extracted: {features}")
@@ -77,26 +78,26 @@ def get_content_using_selenium(url: str) -> str:
         return content
 
 
-def get_features_from_site(real_sites: list[str]) -> list[dict[str, str]]:
+def get_features_from_site(real_sites: dict[str, list[str]]) -> list[dict[str, str]]:
     real_sites_features = []
-    for site in real_sites:
-        print(f"Getting features from {site}...", end=' ')
-        time_init = time.time()
-        content = extract_content(get_url(site))
-        if not content or not content.strip() or 'captcha' in content.lower():
-            content = extract_content(get_content_using_selenium(site))
+    for brand, urls in real_sites.items():
+        for url in urls:
+            print(f"Getting features from {url}...", end=' ')
+            time_init = time.time()
+            content = extract_content(get_url(url))
+            if not content or not content.strip() or 'captcha' in content.lower():
+                content = extract_content(get_content_using_selenium(url))
 
-        if content:
-            features = extract_features(site, content)
-            real_sites_features.append(features)
-            print(f"Done", end=' ')
-        else:
-            print(f"Failed", end=' ')
+            if content:
+                features = extract_features(url, content, brand)
+                real_sites_features.append(features)
+                print(f"Done", end=' ')
+            else:
+                print(f"Failed", end=' ')
 
-        time_finish = time.time()
-        time_taken = round(time_finish - time_init, 4)
-        print(f"[{time_taken} secs]")
-
+            time_finish = time.time()
+            time_taken = round(time_finish - time_init, 4)
+            print(f"[{time_taken} secs]")
     return real_sites_features
 
 
@@ -105,7 +106,7 @@ def check_similarity(url: str, content: str) -> dict[str, str]:
     real_sites_df = pandas.read_pickle('data/real_sites_features_probability.pkl')
     real_sites_tfidf = vectorizer.fit_transform(real_sites_df['content'])
 
-    features = extract_features(url, content)
+    features = extract_features(url, content, "Unknown")
     tfidf_features = vectorizer.transform([features['content']])
 
     logi(f"TF-IDF features shape: {tfidf_features.shape}")
@@ -115,6 +116,7 @@ def check_similarity(url: str, content: str) -> dict[str, str]:
     max_similarity = similarities[max_similarity_index]
 
     real_site = real_sites_df.iloc[max_similarity_index]
+    real_site_brand = real_site["brand"]
     real_site_domain = real_site["domain"]
     real_site_url = real_site["url"]
     provided_url_domain = get_main_domain(url)
@@ -127,11 +129,11 @@ def check_similarity(url: str, content: str) -> dict[str, str]:
 
     if max_similarity > 0.7:
         if real_site_domain != provided_url_domain:
-            return {"status": "fake", "real_domain": real_site_domain, "real_url": real_site_url,
-                    "probability": max_similarity}
+            return {"status": "fake", "real_brand": real_site_brand, "real_domain": real_site_domain,
+                    "real_url": real_site_url, "probability": max_similarity}
         else:
-            return {"status": "real", "real_domain": real_site_domain, "real_url": real_site_url,
-                    "probability": max_similarity}
+            return {"status": "real", "real_brand": real_site_brand, "real_domain": real_site_domain,
+                    "real_url": real_site_url, "probability": max_similarity}
     else:
         return {"status": "uncertain", "real_domain": real_site_domain, "real_url": real_site_url,
                 "probability": max_similarity}
@@ -160,6 +162,7 @@ def append_new_data(features: list[dict[str, int | str]]) -> bool:
     try:
         new_data = pandas.DataFrame(features)
         combined_data = pd.concat([existing_data, new_data], ignore_index=True)
+        combined_data.drop_duplicates(subset=['url'], keep='first', inplace=True)
 
         logi(f"Combined data shape: {combined_data.shape}")
         logi(f"Combined data head: {combined_data.head()}")
@@ -193,11 +196,20 @@ def check_url_content(url: str, content: str):
     return check_similarity(url, text_content)
 
 
-def train_new_real_sites(urls: list[str]):
-    features = get_features_from_site(urls)
+def train_new_real_sites(sites: dict[str, list[str]]):
+    features = get_features_from_site(sites)
     if not features:
-        return {"status": "error", "message": "Error fetching content from provided URLs", "urls": urls}
+        return {"status": "error", "message": "Error fetching content from provided URLs", "sites": sites}
     if append_new_data(features):
-        return {"status": "success", "message": "Training data updated successfully", "urls": urls}
+        return {"status": "success", "message": "Training data updated successfully", "sites": sites}
     else:
-        return {"status": "error", "message": "Error updating training data", "urls": urls}
+        return {"status": "error", "message": "Error updating training data", "sites": sites}
+
+
+def get_trained_sites():
+    real_sites_df = pandas.read_pickle('data/real_sites_features_probability.pkl')
+    result = {}
+    for obj in real_sites_df.to_dict(orient='records'):
+        brand = obj.get("brand", "Unknown")
+        result.setdefault(brand, []).append(obj["url"])
+    return {"status": "success", "data": result}
