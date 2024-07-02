@@ -43,7 +43,7 @@ function Team() {
           linkedin="https://www.linkedin.com/in/arkadip-ray-41a1a427b/"
           twitter="https://x.com/RayArkadipTTV"
           github="https://github.com/Arkadipttv"
-          image="https://media.licdn.com/dms/image/D5603AQHnA4PX6j9XZQ/profile-displayphoto-shrink_800_800/0/1698387891893?e=1724889600&v=beta&t=gxdKLyyqXU7EwmkXjHfFm8zxypKz7m_W0ziPYee_d54"
+          image="https://media.licdn.com/dms/image/D4D03AQEY1nf-JRRhVw/profile-displayphoto-shrink_800_800/0/1719903157350?e=1725494400&v=beta&t=1pSXQomnulze0YSuF-2ruKvqWE35gxW5iTHJ2j8Nqck"
         />
       </div>
     </section>
