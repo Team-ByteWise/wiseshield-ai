@@ -82,7 +82,7 @@ function Hero() {
           whileTap="tap"
           variants={buttonHover}
           onClick={() => {
-            window.open("https://github.com/Team-ByteWise/hack4bengal/");
+            window.open("https://github.com/Team-ByteWise/wiseshield-ai/");
           }}
           className=" group bg-gradient-to-br from-[#4E37D9] from-20% via-[#4C3EA0] via-40% to-[#19114B] to-90%  text-white text-[22px] font-semibold px-6 py-2 rounded-3xl justify-center items-center flex gap-x-2 "
         >
