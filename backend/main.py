@@ -47,15 +47,18 @@ def check_for_phishing_site():
 @app.route("/train", methods=["POST"])
 def train_model():
     data = request.get_json()
-    if 'urls' in data and isinstance(data['urls'], list):
-        return wiseshield.train_new_real_sites(urls=data['urls'])
-    else:
-        return wiseshield.train_new_real_sites(urls=[data['url']])
+    return wiseshield.train_new_real_sites(sites=data['sites'])
+
+
+@cross_origin(origin='*')
+@app.route("/trained_sites", methods=["GET"])
+def get_trained_sites():
+    return wiseshield.get_trained_sites()
 
 
 def main():
-    append_urls = json.load(open('training_data/tech_sites.json'))
-    wiseshield.train_new_real_sites(urls=append_urls)
+    sites = json.load(open('training_data/sites.json'))
+    wiseshield.train_new_real_sites(sites=sites)
 
 
 if __name__ == "__main__":

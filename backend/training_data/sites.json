@@ -106,8 +106,8 @@
     "https://gitlab.com/users/sign_in"
   ],
   "Bitbucket": [
-    "https://bitbucket.org/"
-    
+    "https://bitbucket.org/",
+    "https://id.atlassian.com/login?application=bitbucket&continue=https%3A%2F%2Fbitbucket.org%2Faccount%2Fsignin%2F%3Fnext%3D%252F%26redirectCount%3D1"
   ],
   "Atlassian": [
     "https://atlassian.com/",
@@ -152,7 +152,7 @@
   "Steam": [
     "https://store.steampowered.com/",
     "https://www.steampowered.com/",
-     "https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header"
+    "https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header"
   ],
   "Epic Games": [
     "https://store.epicgames.com/en-US/",
