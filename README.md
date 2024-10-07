@@ -1,4 +1,4 @@
-# WiseShield Ai (Hack4Bengal 3.0 Project)
+# WiseShield Ai
 
 **Project Name:** WiseShield Ai
 
@@ -252,5 +252,3 @@ This project is for educational purposes only. The phishing sites are hosted loc
 - [Webpack](https://webpack.js.org/)
 
 ---
-
-### Created at Hack4Bengal 3.0 by Team ByteWise
