@@ -1,9 +1,5 @@
 # WiseShield Ai
 
-**Project Name:** WiseShield Ai
-
-**Project Theme:** Open Innovation
-
 ## Description
 
 WiseShield AI is a comprehensive security solution designed to safeguard users from phishing attacks. The project integrates a Flask API server powered by Machine Learning, a Chrome extension, and a website developed using React and Tailwind CSS. The Chrome extension detects sensitive fields such as Username and Password on websites and sends the site's URL and content to the backend server. The backend server, using a pre-trained model, checks if the site is legitimate or not by comparing it with known legitimate sites. If the site is identified as fake, the extension warns the user and redirects them to the legitimate site.
@@ -250,5 +246,3 @@ This project is for educational purposes only. The phishing sites are hosted loc
 ### Chrome Extension
 
 - [Webpack](https://webpack.js.org/)
-
----
