@@ -11,9 +11,3 @@
 - [ESLint](https://eslint.org/)
 - [Autoprefixer](https://autoprefixer.github.io/)
 - [Axios](https://axios-http.com/)
-
----
-
-### Created at Hack4Bengal 3.0
-
-### By Team ByteWise

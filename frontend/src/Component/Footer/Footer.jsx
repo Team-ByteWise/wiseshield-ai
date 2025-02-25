@@ -22,7 +22,7 @@ function Footer() {
             <p className="font-semibold text-lg">Contact us</p>
             <span className="flex items-center gap-x-3">
               <img src="src/assets/mail.svg" className="h-[20px]" alt="" />
-              <span className=" cursor-pointer">wiseguard@bytewise.com</span>
+              <span className="cursor-pointer">wiseshield@itsyourap.tech</span>
             </span>
             <span className="flex items-center gap-x-3">
               <img
@@ -30,7 +30,7 @@ function Footer() {
                 src="src/assets/phone-call.svg"
                 alt=""
               />
-              <span className=" cursor-pointer">+916969xxxx9</span>
+              <span className="cursor-pointer">+916969xxxx9</span>
             </span>
           </div>
         </div>
@@ -47,7 +47,7 @@ function Footer() {
         </div>
       </div>
       <div className="bg-[#8f7bff] py-2 mt-16 text-black font-semibold flex justify-center">
-        <span>©️ 2024 ByteWise | Hack4Bengal</span>
+        <span>©️ 2024 WiseShield AI</span>
       </div>
     </footer>
   );

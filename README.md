@@ -19,6 +19,7 @@ WiseShield AI is a comprehensive security solution designed to safeguard users f
     ```bash
     cd wiseshield-ai
     ```
+
 3. Run the following command to run automated install:
 
     For Windows (Powershell):

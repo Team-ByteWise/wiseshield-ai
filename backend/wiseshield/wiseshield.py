@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from bytewise import logd, loge, logi, logw
+from wiseshield import logd, loge, logi, logw
 
 
 def extract_content(response: str) -> str | None:

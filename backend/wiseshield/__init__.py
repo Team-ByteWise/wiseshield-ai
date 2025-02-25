@@ -29,7 +29,7 @@ def loge(message):
 
 
 def main():
-    print("Team ByteWise OP")
+    print("WiseShield AI OP")
 
 
 if __name__ == "__main__":

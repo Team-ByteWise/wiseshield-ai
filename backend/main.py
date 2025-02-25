@@ -5,7 +5,7 @@ from flask import Flask, request
 from flask_caching import Cache
 from flask_cors import CORS, cross_origin
 
-from bytewise import wiseshield
+from wiseshield import wiseshield
 
 app = Flask(__name__)
 CORS(app)
@@ -22,7 +22,7 @@ def generate_cache_key(data):
 @cross_origin(origin='*')
 @app.route("/")
 def hello_world():
-    return "<h1>Team ByteWise</h1><h3>WiseShield Ai Backend</h3>"
+    return "<h1>WiseShield Ai Backend</h1>"
 
 
 @cross_origin(origin='*')
