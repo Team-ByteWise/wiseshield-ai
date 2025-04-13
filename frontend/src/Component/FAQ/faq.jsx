@@ -7,7 +7,7 @@ function Faq() {
         Frequently Asked Questions
       </h1>
 
-      <div className="w-3/4 m-auto  rounded-lg">
+      <div className="md:w-3/4 w-[90%] m-auto  rounded-lg">
         <Accordion
           title="What is WiseShield?"
           answer=" WiseShield is a Chrome Extension designed to help users detect

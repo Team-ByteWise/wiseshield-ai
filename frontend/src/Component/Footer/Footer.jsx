@@ -5,8 +5,8 @@ function Footer() {
   return (
     <footer className="relative pt-8 bg-[#B0A5F1]">
       <div className="bg-black h-[2px] w-10/12 mx-auto mb-14"></div>
-      <div className="px-6 flex ">
-        <div className="w-2/3 flex justify-around">
+      <div className="px-6 flex md:flex-nowrap flex-wrap md:flex-row flex-col-reverse justify-center items-center">
+        <div className="md:w-2/3 w-[95%] md:gap-4 gap-2 md:flex-nowrap flex-wrap flex justify-around">
           <div className="flex flex-col items-start gap-y-3 ">
             <p className="font-semibold text-lg">Home Solutions</p>
             <span className="link cursor-pointer">WiseShield Standard</span>

@@ -39,8 +39,8 @@ function AddSite() {
       });
   };
   return (
-    <div className="py-[60px]  bg-[#B0A5F1] flex justify-around">
-      <div className="w-2/5 flex flex-col justify-center">
+    <div className="py-[60px]  bg-[#B0A5F1] flex md:justify-around md:flex-row flex-col justify-center items-center">
+      <div className="md:w-2/5 w-4/5 flex flex-col justify-center">
         <span className="text-[45px] font-semibold  text-[#3d3182] ">
           Don&apos;t find a legitimate site ?
         </span>
@@ -55,19 +55,19 @@ function AddSite() {
             value={siteName}
             onChange={(e) => setSiteName(e.target.value)}
             placeholder="Site Name"
-            className="border-2 border-black/10 rounded-lg px-3 outline-none duration-150 w-[400px] bg-white/40 py-1.5"
+            className="border-2 border-black/10 rounded-lg px-3 outline-none duration-150 sm:w-[400px] w-[95vw] bg-white/40 py-1.5"
           />
           <input
             type="text"
             value={siteUrl}
             onChange={(e) => setSiteUrl(e.target.value)}
             placeholder="Site URL"
-            className="border-2 border-black/10 rounded-lg px-3 outline-none duration-150 w-[400px] bg-white/40 py-1.5"
+            className="border-2 border-black/10 rounded-lg px-3 outline-none duration-150 sm:w-[400px] w-[95vw] bg-white/40 py-1.5"
           />
           <button
             type="submit"
             disabled={clicked}
-            className={`rounded-lg px-3 py-1 text-white w-[400px] ${
+            className={`rounded-lg px-3 py-1 text-white sm:w-[400px] w-[95vw] ${
               clicked
                 ? "cursor-not-allowed bg-gray-500"
                 : "bg-[#3d3182] cursor-pointer"
