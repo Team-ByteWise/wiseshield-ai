@@ -7,11 +7,11 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <header>
-      <nav className="flex items-center justify-between py-10 bg-[#aea0ff]">
+      <nav className="flex items-center md:flex-row flex-col justify-between py-10 bg-[#aea0ff]">
         <div className="w-3/12 flex items-center justify-center">
           <Logo />
         </div>
-        <div className="w-7/12 flex flex-shrink justify-evenly items-center gap-x-11">
+        <div className="lg:w-7/12 md:w-[72%] w-[98%] sm:flex-nowrap flex-wrap flex flex-shrink justify-evenly items-center md:gap-x-11 gap-x-2 gap-y-6">
           <NavLink
             to="/"
             className=" link no-underline text-lg  font-medium  text-[#2b1f6f]"

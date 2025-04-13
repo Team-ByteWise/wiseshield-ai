@@ -12,7 +12,7 @@ function Team() {
           Get in touch with our experts for any questions or inquiries.
         </p>
       </div>
-      <div className="flex pb-[150px] w-full justify-evenly gapx">
+      <div className="flex pb-[150px] w-full justify-evenly gapx md:flex-nowrap flex-wrap">
         <Profile
           name="Ankan Pal"
           role="Founder & CEO"

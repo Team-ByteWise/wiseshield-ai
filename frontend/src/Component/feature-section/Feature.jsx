@@ -3,15 +3,15 @@ import React from "react";
 function Feature() {
   return (
     <div className=" py-[100px] bg-[#fbe7ff]">
-      <div className="p-10 px-20 flex items-center justify-center ">
-        <div className="w-1/2 flex items-center justify-center">
+      <div className="py-10 px-4 md:px-20 flex items-center justify-center md:flex-row flex-col">
+        <div className="md:w-1/2 w-[95%] flex items-center justify-center">
         <img
           src="src/assets/feature-2.svg"
           className="h-[350px] drop-shadow-2xl "
           alt=""
         />
         </div>
-        <div className="w-1/2 flex flex-col items-center justify-center gap-y-16 ">
+        <div className="md:w-1/2 w-[95%] flex flex-col items-center justify-center gap-y-16 ">
           <span className="text-3xl text-center font-bold text-[#5646b1]">
           Don't Get Hooked by Phishing Scams
           </span>
@@ -20,13 +20,13 @@ function Feature() {
           </p>
         </div>
       </div>
-      <div className="p-10 px-20 flex flex-row-reverse items-center justify-center gap-x-4">
+      <div className="py-10 px-4 md:px-20 flex md:flex-row-reverse items-center justify-center gap-x-4 flex-col">
         <img
           src="src/assets/feature-1.svg"
           className="h-[350px] drop-shadow-2xl"
           alt=""
         />
-        <div className="w-3/5 flex flex-col items-center justify-center gap-y-10 ">
+        <div className="md:w-3/5 w-[95%] flex flex-col items-center justify-center gap-y-10 ">
           <span className="text-3xl text-center font-bold text-[#5646b1]">
           WiseShield: Your Ultimate Guard <br/>Against Phishing Attacks
           </span>

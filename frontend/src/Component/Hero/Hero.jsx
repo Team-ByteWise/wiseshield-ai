@@ -62,12 +62,12 @@ function Hero() {
         <motion.div
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className=" font-bold text-[80px] bg-clip-text text-center text-transparent bg-gradient-to-r from-[#4E37D9] from-20% via-[#4C3EA0] to-[#19114B] to-90%"
+          className=" font-bold md:text-[80px] text-[50px] bg-clip-text text-center text-transparent bg-gradient-to-r from-[#4E37D9] from-20% via-[#4C3EA0] to-[#19114B] to-90%"
         >
           Phishing Prohibited,
           <br /> Fishing Allowed
         </motion.div>
-        <span className=" mt-4 text-center text-[18px] text-[#1B134E] font-medium">
+        <span className=" mt-4 text-center md:text-[18px] text-[14px] text-[#1B134E] font-medium">
           Keep your internet use{" "}
           <span className="font-bold text-[#4833cc]">safe and private</span> and
           your devices running
