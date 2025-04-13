@@ -70,7 +70,7 @@ function AddSite() {
             className={`rounded-lg px-3 py-1 text-white sm:w-[400px] w-[95vw] ${
               clicked
                 ? "cursor-not-allowed bg-gray-500"
-                : "bg-[#3d3182] cursor-pointer"
+                : "bg-[#3d3182] hover:bg-[#2d236b] cursor-pointer"
             }`}
           >
             Submit
