@@ -21,7 +21,7 @@ function Profile({ name, role, linkedin, twitter, github, image }) {
             className="text-muted-foreground hover:text-foreground"
             prefetch={false}
           >
-            <LinkedinIcon className="h-5 w-5" />
+            <LinkedinIcon className="h-5 w-5 hover:scale-110 transition-all" />
           </Link>
           <Link
             to={twitter}
@@ -30,7 +30,7 @@ function Profile({ name, role, linkedin, twitter, github, image }) {
             className="text-muted-foreground hover:text-foreground"
             prefetch={false}
           >
-            <TwitterIcon className="h-5 w-5" />
+            <TwitterIcon className="h-5 w-5 hover:scale-110 transition-all" />
           </Link>
           <Link
             to={github}
@@ -39,7 +39,7 @@ function Profile({ name, role, linkedin, twitter, github, image }) {
             className="text-muted-foreground hover:text-foreground"
             prefetch={false}
           >
-            <GithubIcon className="h-5 w-5" />
+            <GithubIcon className="h-5 w-5 hover:scale-110 transition-all" />
           </Link>
         </div>
       </div>

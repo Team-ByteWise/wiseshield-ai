@@ -1,10 +1,13 @@
 import React from "react";
 import "../Logo/style.css";
+import { NavLink } from "react-router-dom";
 
 function Logo() {
   return (
     <>
-      <div class="w-[170px] flex flex-col">
+    <NavLink to="/">
+              
+      <div class="w-[170px] flex flex-col cursor-pointer" href="/">
         <span class="font-extrabold text-2xl">
           WiseShield
           <span class="bg-clip-text ml-1 text-transparent bg-gradient-to-r from-[#3196DC] to-[#9068C1]">
@@ -20,6 +23,8 @@ function Logo() {
           />
         </div>
       </div>
+
+      </NavLink>
     </>
   );
 }

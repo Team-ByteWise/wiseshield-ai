@@ -18,13 +18,13 @@ function Footer() {
             <span className="link cursor-pointer">Chrome Extension link</span>
             <span className="link cursor-pointer">Rate Us</span>
           </div>
-          <div className="flex flex-col items-start gap-y-3 ">
+          <div className="flex flex-col items-start gap-y-3">
             <p className="font-semibold text-lg">Contact us</p>
-            <span className="flex items-center gap-x-3">
+            <span className="flex items-center gap-x-3 hover:scale-105 transition-all">
               <img src="src/assets/mail.svg" className="h-[20px]" alt="" />
               <span className="cursor-pointer">wiseshield@itsyourap.tech</span>
             </span>
-            <span className="flex items-center gap-x-3">
+            <span className="flex items-center gap-x-3 hover:scale-105 transition-all">
               <img
                 className="h-[20px]"
                 src="src/assets/phone-call.svg"
@@ -39,10 +39,10 @@ function Footer() {
             <Logo />
           </div>
           <div className="h-1/2 flex justify-center items-center gap-x-4">
-          <a href=""><img src="src/assets/instagram.svg" className="h-[30px] text-black hover:text-yellow-400" alt="" /></a>
-          <a href=""><img src="src/assets/facebook.svg" className="h-[30px]" alt="" /></a>
-          <a href=""><img src="src/assets/linkedin.svg" className="h-[30px]" alt="" /></a>
-          <a href=""><img src="src/assets/twitter.svg" className="h-[26px]" alt="" /></a>
+          <a href=""><img src="src/assets/instagram.svg" className=" hover:scale-110 transition-all h-[30px] text-black hover:text-yellow-400" alt="" /></a>
+          <a href=""><img src="src/assets/facebook.svg" className=" hover:scale-110 transition-all h-[30px]" alt="" /></a>
+          <a href=""><img src="src/assets/linkedin.svg" className=" hover:scale-110 transition-all h-[30px]" alt="" /></a>
+          <a href=""><img src="src/assets/twitter.svg" className=" hover:scale-110 transition-all h-[26px]" alt="" /></a>
           </div>
         </div>
       </div>
